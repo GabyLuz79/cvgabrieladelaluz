@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: 60px;
+    background-color: lawngreen;
+}
+
+h1 {
+    margin-top: 0;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+div.menus,
+ul,
+li {
+    display: inline-block;
+
+}
+
+div.menus {
+    margin-left: 750px;
+}
+
+li {
+    margin: 5px;
+}
+
+ul {
+    margin-top: 0;
+}
+
+h4 {
+    margin-top: 0;
+    display: inline-block;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+}
+
+div.receta,
+h5,
+p {
+    width: 100vw;
+    height: auto display: inline-block;
+    text-aling: auto;
+}
+
+div.box1,
+div.box2 div.box3 {
+    margin-top: 0;
+    border: 1px solid black;
+    width: 200px;
+    height: auto;
+    padding: 5px;
+    margin: 50px 10px;
+    background-color: lightblue;
+    text-align: justify;
+    display: inline-block;
+}

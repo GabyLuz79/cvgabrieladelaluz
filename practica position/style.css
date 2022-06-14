@@ -1,0 +1,36 @@
+.gris {
+    height: 200px;
+    width: 300px;
+    background-color: rgba(128, 128, 128, 0.247);
+    position: relative;
+    top: 100px;
+    left: 20px;
+}
+
+.rojo {
+    height: 300px;
+    width: 220px;
+    background-color: rgba(255, 0, 0, 0.349);
+    position: relative;
+    left: 180px;
+
+}
+
+.morado {
+    height: 100px;
+    width: 500px;
+    background-color: rgba(51, 9, 240, 0.253);
+    position: relative;
+    bottom: 100px;
+    left: 25px;
+
+}
+
+.verde {
+    height: 350px;
+    width: 120px;
+    background-color: rgba(0, 128, 0, 0.541);
+    position: relative;
+    left: 470px;
+    bottom: 500px;
+}
