@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body class="bg-ligth">
+  <div class="logo" style="width: 20rem;">
+      <img src="https://cuentasdeahorro.com.mx/wp-content/uploads/citibanamex-300x180.jpg" class="card-img-top"
+          alt="...">
+      <div class="logo">
+      </div>
+  </div>
+  Seleccione el nombre y numero de cuenta:
+
+  <select id="cuenta" onchange="cuentasUsuario()">
+    <option value="0"></option>
+    <option value="100"> Gabriela - cuenta: 4115 5248 8547</option>
+    <option value="50">Raul - cuenta: 4115 5248 8547</option>
+    <option value="200"> Daniela- cuenta: 4115 5248 8547</option>
+      </select>
+
+
+  <p> Su saldo actual es: <input type="text" id="saldoActual" size="20"></p>
+
+
+  <form action="" method="post">
+
+    <input type="text" name="deposito" placeholder="Ingrese un deposito">
+    <button type="button" onclick="depositarDinero()">Depositar</button>
+    </br>
+    </br>   
+
+
+    <input type="text" name="retirar">
+    <button type="button" onclick="retirarDinero()">Retirar</button>
+  </form>
+
+
+
+  
+
+
+  <script type="text/javascript">
+
+    function cuentasUsuario() {
+         var cuenta = document.getElementById("cuenta"),
+         saldoActual = document.getElementById("saldoActual");
+         saldoActual.value = cuenta.value;
+    }
+    
+    
+          function depositarDinero() {
+              var deposito = parseInt(document.getElementsByName("deposito")[0].value);
+                  saldoActual.value = parseInt(saldoActual.value)+deposito;
+            alert("Deposito reaizado:" +saldoActual.value);
+        }
+    
+    
+        function retirarDinero() {
+    
+            var retiro = parseInt(document.getElementsByName("retirar")[0].value);  
+                if (retiro > parseInt(saldoActual.value)) {
+                   alert("Su fondo disposible no es suficiente (nulo): "+saldoActual);
+          } else {
+            saldoActual.value = parseInt(saldoActual.value)-retiro;
+          }
+        }
+    
+        function verificarSaldo() {
+            document.getElementsByName("verificar")[0].value = saldoActual.value;
+    
+        }
+    
+    
+    </script>
+
+</body>
+
+</html>
